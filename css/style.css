@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    /* Colors */
+    --main: rgb(31, 31, 31);
+    --home: #000;
+    --leters: #fff;
+    --fundo1: rgb(0, 255, 229);
+    --fundo2: rgb(255, 80, 243);
+    --patrocinio: rgb(138, 138, 138);
+    --playlist: #333;
+    --album: rgb(18, 17, 17);
+    --activated: rgb(73, 244, 73);
+}
+
+.fa{
+    color: var(--leters);
+    margin-left: 15px;
+}
+
+/* --------------------------------------- MENU LEFT --------------------------------------*/
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--main);
+}
+
+.elements{
+    border-bottom: 1px solid var(--main);
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.left{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--home);
+    height: 130vh;
+}
+
+.btnshome{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btnhome{
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: var(--leters);
+    margin-left: 10px;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.ponto{
+    font-size: 30px;
+}
+
+.criarlistas{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.listas{
+    color: var(--leters);
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 22px;
+    margin-top: 10px;
+    
+}
+
+.listas_lista{
+    list-style: none;
+}
+
+.lista_repro{
+    margin-bottom: 15px;
+}
+
+/* --------------------------------- Main ----------------------------------------- */
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+}
+
+.perfil{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.perfil_atualizar{
+    background-color: transparent;
+    border-radius: 20px;
+    border: 0.01px solid #fff;
+    color: var(--leters);
+    padding: 5px 10px;
+    margin-right: 25px;
+    font-size: 13px;
+}
+
+.id_profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--home);
+    color: var(--leters);
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.p_perfil{
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.patrocinio{
+    background-image: linear-gradient(45deg, var(--fundo1), var(--fundo2));
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    margin-left: 60px;
+    border-radius: 8px;
+}
+
+.headerpatrocinio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.title_patrocionio{
+    margin-right: 350px;
+    text-align: center;
+    color: var(--leters);
+}
+
+.p_patrocinio{
+    color: var(--leters);
+    margin-right: 20px;
+    background-color: var(--patrocinio);
+    border-radius: 10px;
+    padding: 3px 8px;
+}
+
+.patrociniocontent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.patrociniocontent h2{
+    color: var(--leters);
+}
+
+.artistassugeridos{
+    display: flex;
+    flex-direction: row;
+}
+
+.artistas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.artistas img{
+    width: 80%;
+}
+
+.artistas label{
+    font-size: 12px;
+    color: var(--leters);
+}
+
+.playlists h1{
+    color: var(--leters);
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.tabela{
+    margin-left: 60px;
+    width: 130%;
+}
+
+.linha1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    margin-bottom: 15px;
+}
+
+.linha2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    margin-bottom: 15px;
+}
+
+.playlist{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--playlist);
+    border-radius: 6px;
+    margin-right: 20px;
+    list-style: none;
+    width: 100%;
+    height: 12vh;
+}
+
+.playlist label{
+    color: var(--leters);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.albuns h3{
+    color: var(--leters);
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.lista_albuns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 40px;
+}
+
+.album{
+    background-color: var(--album);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.album img{
+    width: 70%;
+    margin-top: 20px;
+}
+
+.album .title{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.album .desc{
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.album label{
+    color: var(--leters);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: var(--main);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid var(--playlist);
+}
+
+.music{
+    display: flex;
+    flex-direction: row;  
+    align-items: center; 
+    justify-content: center;
+}
+
+.music i{
+    margin-left: 20px;
+}
+
+.music_autor{
+    margin-left: 10px;
+    height: 100%;
+    color: var(--leters); 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center; 
+}
+
+.music_autor h6{
+    margin-top: 5px;
+}
+
+.music img{
+    width: 70%;
+    height: 70%;
+}
+
+.repro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 175px;
+    margin-right: 90px;
+    width: 35%;
+}
+
+.cima{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.baixo img{
+    width: 100%;
+}
+
+.btn_repro{
+    color: var(--leters);  
+    background-color: transparent;
+    outline: none;
+    content: none;
+    border: none;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+.active{
+    color: var(--activated);
+}
+
+.btn_vol{
+    margin-top: 25px;
+    color: var(--leters);  
+    background-color: transparent;
+    outline: none;
+    content: none;
+    border: none;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.volume img{
+    margin-left: 10px;
+}
+
